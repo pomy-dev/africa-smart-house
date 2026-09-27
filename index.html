@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Africa Smart Prefabricated Housing Solutions — Build Smarter. Build Faster. Build Africa.</title>
+  <meta name="description"
+    content="Industrialised building systems for governments, developers, mines, institutions and communities across Africa. Rapid, compliant, sustainable prefabricated housing and modular infrastructure.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="/public/assets/africa-container.jpeg">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: '#050D1F', 900: '#0A1930', 800: '#0F2444', 700: '#16335E', 600: '#1E4278' },
+            gold: { 300: '#EAC85E', 400: '#DDB63F', 500: '#C9A227', 600: '#A98420' },
+            azure: { 400: '#3D9BE9', 500: '#1E78C8', 600: '#155E9E' },
+            teal2: '#12808C'
+          },
+          fontFamily: { sora: ['Sora', 'sans-serif'], inter: ['Inter', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="antialiased">
+
+  <!-- ================= NAV ================= -->
+  <nav id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#top" class="flex items-center gap-3 group">
+          <img src="./public/assets/africa-container.png" alt="Africa Smart logo"
+            class="h-12 w-12 rounded-xl group-hover:ring-gold-400 transition">
+          <div class="leading-tight">
+            <div class="font-display font-800 font-extrabold tracking-wide text-white text-sm sm:text-base">AFRICA <span
+                class="gold-grad">SMART</span></div>
+            <div class="text-[9px] sm:text-[10px] tracking-[0.22em] text-azure-400 font-medium">CONTAINER HOUSING
+              SOLUTIONS</div>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+          <a href="#solutions" class="hover:text-gold-400 transition">Solutions</a>
+          <a href="#process" class="hover:text-gold-400 transition">Process</a>
+          <a href="#projects" class="hover:text-gold-400 transition">Projects</a>
+          <a href="#government" class="hover:text-gold-400 transition">Government</a>
+          <a href="#technology" class="hover:text-gold-400 transition">Technology</a>
+          <a href="#contact" class="hover:text-gold-400 transition">Contact</a>
+        </div>
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="#feasibility" class="btn-ghost rounded-full px-5 py-2.5 text-sm font-semibold text-white">Request
+            Quote</a>
+          <a href="#feasibility" class="btn-gold rounded-full px-5 py-2.5 text-sm font-bold">Feasibility Study</a>
+        </div>
+        <button id="menuBtn" class="lg:hidden p-2 text-white" aria-label="Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="lg:hidden hidden glass mx-4 rounded-2xl p-6 space-y-4 text-slate-200 font-medium">
+      <a href="#solutions" class="block hover:text-gold-400">Solutions</a>
+      <a href="#process" class="block hover:text-gold-400">Process</a>
+      <a href="#projects" class="block hover:text-gold-400">Projects</a>
+      <a href="#government" class="block hover:text-gold-400">Government</a>
+      <a href="#technology" class="block hover:text-gold-400">Technology</a>
+      <a href="#feasibility" class="btn-gold rounded-xl px-5 py-3 block text-center font-bold">Request Feasibility
+        Study</a>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header id="top" class="relative min-h-screen flex items-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2000&auto=format&fit=crop"
+      alt="Modern modular architecture" class="absolute inset-0 w-full h-full object-cover opacity-25">
+    <div class="absolute inset-0 bg-gradient-to-b from-navy-950/80 via-navy-900/70 to-navy-950"></div>
+    <div class="absolute inset-0 hero-grid"></div>
+    <div class="absolute -top-40 -right-40 w-[36rem] h-[36rem] rounded-full bg-azure-500/20 blur-[140px]"></div>
+    <div class="absolute -bottom-40 -left-40 w-[32rem] h-[32rem] rounded-full bg-gold-500/15 blur-[140px]"></div>
+
+    <div class="relative max-w-7xl mx-auto px-5 lg:px-8 pt-32 pb-20 w-full">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <div
+            class="hero-el inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-xs font-semibold tracking-[0.18em] text-azure-400 mb-7">
+            <span class="w-2 h-2 rounded-full bg-gold-400 pulse-ring"></span>
+            AFRICA SMART PREFABRICATED HOUSING SOLUTIONS
+          </div>
+          <h1 class="hero-el font-display font-extrabold text-4xl sm:text-5xl xl:text-7xl leading-[1.05] text-white">
+            Build <span class="gold-grad">Smarter.</span><br>
+            Build <span class="blue-grad">Faster.</span><br>
+            Build <span class="gold-grad">Africa.</span>
+          </h1>
+          <p class="hero-el mt-6 text-lg text-slate-300 max-w-xl leading-relaxed">
+            Industrialised building systems for governments, developers, mines, institutions and communities —
+            integrating rapid construction, factory-controlled quality, smart energy and scalable project delivery.
+          </p>
+          <div class="hero-el mt-9 flex flex-wrap gap-4">
+            <a href="#feasibility"
+              class="btn-gold rounded-full px-8 py-4 font-bold text-base inline-flex items-center gap-2">
+              Request a Project Feasibility Study
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a href="#solutions" class="btn-ghost rounded-full px-8 py-4 font-semibold text-white">Explore Solutions</a>
+          </div>
+          <div class="hero-el mt-12 grid grid-cols-3 gap-6 max-w-lg">
+            <div>
+              <div class="tick font-display text-3xl sm:text-4xl font-extrabold gold-grad"><span
+                  data-count="70">0</span>%</div>
+              <div class="text-xs text-slate-400 mt-1 tracking-wide">FASTER DELIVERY*</div>
+            </div>
+            <div>
+              <div class="tick font-display text-3xl sm:text-4xl font-extrabold blue-grad"><span data-count="9">0</span>
+              </div>
+              <div class="text-xs text-slate-400 mt-1 tracking-wide">SECTORS SERVED</div>
+            </div>
+            <div>
+              <div class="tick font-display text-3xl sm:text-4xl font-extrabold gold-grad"><span
+                  data-count="24">0</span>/7</div>
+              <div class="text-xs text-slate-400 mt-1 tracking-wide">SMART MONITORING</div>
+            </div>
+          </div>
+          <p class="hero-el mt-3 text-[10px] text-slate-500">*Programme compression where project system permits</p>
+        </div>
+        <div class="lg:col-span-5 hidden lg:block">
+          <div class="relative floaty">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-gold-500/30 to-azure-500/30 rounded-[2rem] blur-2xl">
+            </div>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1748265794414-32c3a7fcd5a3?q=80&w=725&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Africa Smart Container Housing Solutions"
+              class="relative rounded-[2rem] shadow-2xl ring-1 ring-white/10 w-full">
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#pillars" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-400 hover:text-gold-400 transition"
+      aria-label="Scroll down">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        class="animate-bounce">
+        <path d="M12 5v14M6 13l6 6 6-6" />
+      </svg>
+    </a>
+  </header>
+
+  <!-- ================= SECTOR MARQUEE ================= -->
+  <section class="border-y border-white/5 bg-navy-900/60 py-5 overflow-hidden">
+    <div class="marquee-track gap-10 text-sm font-display font-semibold tracking-[0.25em] text-slate-400">
+      <span class="flex gap-10 shrink-0" id="marqueeA"></span>
+      <span class="flex gap-10 shrink-0" id="marqueeB"></span>
+    </div>
+  </section>
+
+  <!-- ================= VALUE PILLARS ================= -->
+  <section id="pillars" class="relative py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="reveal max-w-2xl">
+        <div class="text-gold-500 font-semibold tracking-[0.25em] text-xs mb-4">WHY AFRICA SMART</div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">Five pillars
+          of <span class="gold-grad">evidence-led</span> delivery</h2>
+        <p class="mt-5 text-slate-400 leading-relaxed">Premium positioning backed by technical credibility — every claim
+          paired with verifiable process, documentation and project data.</p>
+      </div>
+      <div id="pillarGrid" class="mt-14 grid sm:grid-cols-2 lg:grid-cols-5 gap-5"></div>
+    </div>
+  </section>
+
+  <!-- ================= SOLUTIONS ================= -->
+  <section id="solutions" class="relative py-24 lg:py-32 bg-navy-900/40 border-y border-white/5">
+    <div class="absolute top-0 right-0 w-[28rem] h-[28rem] bg-azure-600/10 blur-[120px] rounded-full"></div>
+    <div class="relative max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="reveal flex flex-wrap items-end justify-between gap-6">
+        <div class="max-w-2xl">
+          <div class="text-gold-500 font-semibold tracking-[0.25em] text-xs mb-4">SOLUTIONS SELECTOR</div>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">What do you
+            need to <span class="blue-grad">build?</span></h2>
+        </div>
+        <div class="flex flex-wrap gap-2" id="solTabs"></div>
+      </div>
+      <div id="solGrid" class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS ================= -->
+  <section id="process" class="relative py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="reveal text-center max-w-2xl mx-auto">
+        <div class="text-gold-500 font-semibold tracking-[0.25em] text-xs mb-4">HOW WE DELIVER</div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">From feasibility to <span
+            class="gold-grad">aftercare</span></h2>
+        <p class="mt-5 text-slate-400">A disciplined nine-stage delivery model that de-risks complex programmes. Select
+          any stage to explore.</p>
+      </div>
+      <div class="reveal mt-14 relative">
+        <div
+          class="hidden lg:block absolute top-9 left-[6%] right-[6%] h-px bg-gradient-to-r from-transparent via-azure-500/40 to-transparent">
+        </div>
+        <div id="stepsGrid" class="grid grid-cols-3 lg:grid-cols-9 gap-y-8 gap-x-2"></div>
+      </div>
+      <div class="reveal mt-12 glass rounded-3xl p-8 lg:p-10 max-w-3xl mx-auto" id="stepDetail">
+        <div class="flex items-center gap-4 mb-3">
+          <span id="stepNum" class="font-display text-5xl font-extrabold gold-grad">01</span>
+          <h3 id="stepTitle" class="font-display text-2xl font-bold text-white">Discover</h3>
+        </div>
+        <p id="stepDesc" class="text-slate-300 leading-relaxed"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="relative py-24 lg:py-32 bg-navy-900/40 border-y border-white/5 overflow-hidden">
+    <div class="absolute -left-40 top-1/3 w-[26rem] h-[26rem] bg-gold-500/10 blur-[120px] rounded-full"></div>
+    <div class="relative max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="reveal flex flex-wrap items-end justify-between gap-6">
+        <div class="max-w-2xl">
+          <div class="text-gold-500 font-semibold tracking-[0.25em] text-xs mb-4">PROJECT PROOF</div>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">Delivered with <span
+              class="gold-grad">measurable outcomes</span></h2>
+        </div>
+        <p class="text-slate-400 text-sm max-w-sm">Consistent project cards: location, sector, scale, delivery model,
+          system and status. Concept work is always clearly labelled.</p>
+      </div>
+      <div id="projGrid" class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- ================= GOVERNMENT ================= -->
+  <section id="government" class="relative py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="reveal relative rounded-[2rem] overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1800&auto=format&fit=crop"
+          alt="City skyline" class="absolute inset-0 w-full h-full object-cover opacity-20">
+        <div class="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-900/95 to-navy-800/80"></div>
+        <div class="relative p-8 sm:p-14 lg:p-16 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-semibold tracking-[0.25em] mb-5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6" />
+              </svg>
+              GOVERNMENT & PUBLIC-SECTOR PORTAL
+            </div>
+            <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">Accelerating
+              sustainable human settlements through <span class="gold-grad">innovative building technologies</span></h2>
+            <p class="mt-5 text-slate-300 leading-relaxed">A procurement-friendly capability portal for technical
+              evaluators, SCM officials and human-settlements teams — with verified registrations, compliance documents
+              and a secure government document room.</p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#feasibility" class="btn-gold rounded-full px-7 py-3.5 font-bold">Government Solutions</a>
+              <a href="#feasibility" class="btn-ghost rounded-full px-7 py-3.5 font-semibold">Tender / RFQ Desk</a>
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4" id="govGrid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TECHNOLOGY / SMART SYSTEMS ================= -->
+  <section id="technology" class="relative py-24 lg:py-32 bg-navy-900/40 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-14 items-center">
+        <div class="lg:col-span-5 reveal">
+          <div class="text-gold-500 font-semibold tracking-[0.25em] text-xs mb-4">SMART SYSTEMS</div>
+          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white leading-tight">The future of home,
+            <span class="blue-grad">built in</span>
+          </h2>
+          <p class="mt-5 text-slate-400 leading-relaxed">Smart energy and digital features integrated into the product
+            story — not bolted on. Every system is engineered for Africa's climate and infrastructure reality.</p>
+          <a href="#feasibility"
+            class="mt-8 inline-flex items-center gap-2 text-gold-400 font-semibold hover:gap-3 transition-all">Explore
+            the Technical Library
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+        <div class="lg:col-span-7 grid sm:grid-cols-2 gap-5" id="techGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPLIANCE STRIP ================= -->
+  <section class="py-16 border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="reveal text-center mb-10">
+        <div class="text-gold-500 font-semibold tracking-[0.25em] text-xs mb-3">TECHNICAL CONFIDENCE</div>
+        <p class="text-slate-400 text-sm max-w-2xl mx-auto">We publish only verified certificates, registration numbers
+          and professional affiliations — current, dated and evidence-linked. No unverifiable claims, ever.</p>
+      </div>
+      <div class="reveal flex flex-wrap justify-center gap-3" id="badgeRow"></div>
+    </div>
+  </section>
+
+  <!-- ================= FEASIBILITY ESTIMATOR ================= -->
+  <section id="feasibility" class="relative py-24 lg:py-32 overflow-hidden">
+    <div class="absolute -right-40 top-0 w-[30rem] h-[30rem] bg-azure-600/10 blur-[130px] rounded-full"></div>
+    <div class="relative max-w-4xl mx-auto px-5 lg:px-8">
+      <div class="reveal text-center">
+        <div class="text-gold-500 font-semibold tracking-[0.25em] text-xs mb-4">SMART PROJECT ESTIMATOR</div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">Tell us what you need to
+          <span class="gold-grad">build</span>
+        </h2>
+        <p class="mt-5 text-slate-400 max-w-xl mx-auto">A structured project brief in four quick steps. Our commercial
+          team responds with a feasibility pathway — not a generic brochure.</p>
+      </div>
+
+      <div class="reveal mt-12 glass rounded-[2rem] p-6 sm:p-10">
+        <!-- Progress -->
+        <div class="flex items-center gap-2 mb-10" id="progressBar"></div>
+
+        <form id="feasForm" novalidate>
+          <!-- Step 1 -->
+          <div class="fstep active" data-step="1">
+            <h3 class="font-display text-xl font-bold text-white mb-1">Project type & location</h3>
+            <p class="text-slate-400 text-sm mb-6">What are we building, and where?</p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="sm:col-span-2">
+                <label class="text-xs font-semibold tracking-wider text-slate-400">PROJECT TYPE</label>
+                <div class="flex flex-wrap gap-2 mt-2" id="projTypeChips">
+                  <span class="chip selected border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Housing">Housing</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Student Accommodation">Student Housing</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="School">School</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Clinic">Clinic</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Mining Camp">Mining Camp</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Hotel / Lodge">Hotel / Lodge</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Other">Other</span>
+                </div>
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-wider text-slate-400">COUNTRY</label>
+                <select
+                  class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm">
+                  <option>South Africa</option>
+                  <option>Botswana</option>
+                  <option>Namibia</option>
+                  <option>Zambia</option>
+                  <option>Kenya</option>
+                  <option>Other African market</option>
+                </select>
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-wider text-slate-400">PROVINCE / REGION</label>
+                <input type="text" placeholder="e.g. Gauteng, Mpumalanga…"
+                  class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500">
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-xs font-semibold tracking-wider text-slate-400">SITE STATUS</label>
+                <div class="flex flex-wrap gap-2 mt-2" id="siteChips">
+                  <span class="chip selected border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Owned">Owned</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Optioned">Optioned</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Government-owned">Government-owned</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Still searching">Still searching</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="fstep" data-step="2">
+            <h3 class="font-display text-xl font-bold text-white mb-1">Scale & services</h3>
+            <p class="text-slate-400 text-sm mb-6">Rough numbers are fine — feasibility exists to refine them.</p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="text-xs font-semibold tracking-wider text-slate-400">NUMBER OF UNITS / BEDS</label>
+                <input type="number" min="1" placeholder="e.g. 250"
+                  class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500">
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-wider text-slate-400">APPROX. FLOOR AREA (m²)</label>
+                <input type="number" min="1" placeholder="e.g. 12 000"
+                  class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500">
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-xs font-semibold tracking-wider text-slate-400">SERVICES AVAILABLE ON SITE</label>
+                <div class="flex flex-wrap gap-2 mt-2" id="svcChips">
+                  <span class="chip selected border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Water">Water</span>
+                  <span class="chip selected border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Sewer">Sewer</span>
+                  <span class="chip selected border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Power">Power</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Roads">Roads</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Stormwater">Stormwater</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Telecoms">Telecoms</span>
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-xs font-semibold tracking-wider text-slate-400">SMART OPTIONS</label>
+                <div class="flex flex-wrap gap-2 mt-2" id="smartChips">
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Solar PV">Solar PV + battery</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Water harvesting">Water harvesting</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Smart metering">Smart metering</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="EV charging">EV charging</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Security">Security systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="fstep" data-step="3">
+            <h3 class="font-display text-xl font-bold text-white mb-1">Budget & timeline</h3>
+            <p class="text-slate-400 text-sm mb-6">Helps us route your brief to the right commercial team.</p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div class="sm:col-span-2">
+                <label class="text-xs font-semibold tracking-wider text-slate-400">TARGET BUDGET BAND</label>
+                <div class="flex flex-wrap gap-2 mt-2" id="budgetChips">
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Under R10m">Under R10m</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="R10m – R50m">R10m – R50m</span>
+                  <span class="chip selected border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="R50m – R250m">R50m – R250m</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="R250m+">R250m+</span>
+                  <span class="chip border border-white/15 rounded-full px-4 py-2 text-sm text-slate-200"
+                    data-v="Advise me">Advise me</span>
+                </div>
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-wider text-slate-400">TARGET COMPLETION DATE</label>
+                <input type="month"
+                  class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm [color-scheme:dark]">
+              </div>
+              <div>
+                <label class="text-xs font-semibold tracking-wider text-slate-400">DELIVERY MODEL</label>
+                <select
+                  class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm">
+                  <option>Turnkey (design → commissioning)</option>
+                  <option>Supply & assembly only</option>
+                  <option>Supply only</option>
+                  <option>PPP / development partner</option>
+                  <option>Advise me</option>
+                </select>
+              </div>
+              <div class="sm:col-span-2">
+                <label class="text-xs font-semibold tracking-wider text-slate-400">UPLOAD SITE PLAN / RFP / DRAWINGS
+                  (OPTIONAL)</label>
+                <label
+                  class="mt-2 flex flex-col items-center justify-center gap-2 border-2 border-dashed border-white/15 hover:border-gold-500/60 rounded-2xl py-8 cursor-pointer transition text-slate-400 text-sm">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 16V4m0 0l-4 4m4-4l4 4M4 16v3a1 1 0 001 1h14a1 1 0 001-1v-3" />
+                  </svg>
+                  <span id="fileLabel">Drop files here or click to browse</span>
+                  <input type="file" id="fileInput" class="hidden" multiple accept=".pdf,.dwg,.dxf,.docx,.png,.jpg">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="fstep" data-step="4">
+            <h3 class="font-display text-xl font-bold text-white mb-1">Your details</h3>
+            <p class="text-slate-400 text-sm mb-6">Where should our commercial team send your feasibility pathway?</p>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div><label class="text-xs font-semibold tracking-wider text-slate-400">FULL NAME *</label>
+                <input id="fName" required type="text" placeholder="Your name"
+                  class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500">
+              </div>
+              <div><label class="text-xs font-semibold tracking-wider text-slate-400">ORGANISATION</label>
+                <input type="text" placeholder="Company / department"
+                  class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500">
+              </div>
+              <div><label class="text-xs font-semibold tracking-wider text-slate-400">EMAIL *</label>
+                <input id="fEmail" required type="email" placeholder="you@organisation.co.za"
+                  class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500">
+              </div>
+              <div><label class="text-xs font-semibold tracking-wider text-slate-400">PHONE / WHATSAPP</label>
+                <input type="tel" placeholder="+27 …"
+                  class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500">
+              </div>
+              <label class="sm:col-span-2 flex items-start gap-3 text-xs text-slate-400 leading-relaxed cursor-pointer">
+                <input type="checkbox" checked class="mt-0.5 accent-[#C9A227]">
+                I consent to Africa Smart processing this project brief to prepare a feasibility response, in line with
+                the POPIA privacy notice.
+              </label>
+            </div>
+          </div>
+
+          <!-- Success -->
+          <div class="fstep" data-step="5">
+            <div class="text-center py-8">
+              <div
+                class="mx-auto w-20 h-20 rounded-full bg-gradient-to-br from-gold-300 to-gold-600 flex items-center justify-center mb-6 pulse-ring">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#0A1930" stroke-width="3">
+                  <path d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 class="font-display text-2xl font-extrabold text-white">Brief received. <span
+                  class="gold-grad">Enquiry #AS-2026-0482</span></h3>
+              <p class="mt-4 text-slate-400 max-w-md mx-auto leading-relaxed">Acknowledgement sent. Your brief has been
+                scored and routed to the <span id="routedTeam" class="text-gold-400 font-semibold">Strategic Projects
+                  team</span> with a 1-business-day response SLA.</p>
+              <div class="mt-8 glass rounded-2xl p-5 text-left max-w-md mx-auto text-sm text-slate-300 space-y-2">
+                <div class="font-semibold text-white text-xs tracking-widest mb-1">NEXT-STEP CHECKLIST</div>
+                <div class="flex gap-2"><span class="text-gold-400">✓</span> Feasibility scope confirmation call</div>
+                <div class="flex gap-2"><span class="text-gold-400">✓</span> Site assessment scheduling</div>
+                <div class="flex gap-2"><span class="text-gold-400">✓</span> Relevant capability pack shared</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="mt-10 flex items-center justify-between" id="formControls">
+            <button type="button" id="backBtn"
+              class="btn-ghost rounded-full px-6 py-3 text-sm font-semibold invisible">← Back</button>
+            <button type="button" id="nextBtn" class="btn-gold rounded-full px-8 py-3.5 font-bold text-sm">Continue
+              →</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="py-24 lg:py-28 bg-navy-900/40 border-y border-white/5">
+    <div class="max-w-3xl mx-auto px-5 lg:px-8">
+      <div class="reveal text-center mb-12">
+        <div class="text-gold-500 font-semibold tracking-[0.25em] text-xs mb-4">PROCUREMENT & TECHNICAL FAQS</div>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">Answers evaluators <span
+            class="gold-grad">actually need</span></h2>
+      </div>
+      <div id="faqList" class="space-y-3"></div>
+    </div>
+  </section>
+
+  <!-- ================= CTA / FOOTER ================= -->
+  <footer id="contact" class="relative pt-24 pb-10 overflow-hidden">
+    <div
+      class="absolute -bottom-40 left-1/2 -translate-x-1/2 w-[50rem] h-[24rem] bg-gold-500/10 blur-[140px] rounded-full">
+    </div>
+    <div class="relative max-w-7xl mx-auto px-5 lg:px-8">
+      <div class="reveal text-center max-w-3xl mx-auto">
+        <img src="/public/assets/africa-container.png" alt="Africa Smart"
+          class="h-24 w-24 rounded-2xl mx-auto shadow-2xl mb-8">
+        <h2 class="font-display text-3xl sm:text-5xl font-extrabold text-white leading-tight">Ready to build <span
+            class="gold-grad">smarter?</span></h2>
+        <p class="mt-5 text-slate-400 text-lg">From a single smart home to workforce villages and mass-housing
+          programmes — let's scope your project.</p>
+        <div class="mt-9 flex flex-wrap justify-center gap-4">
+          <a href="#feasibility" class="btn-gold rounded-full px-8 py-4 font-bold">Request Feasibility Study</a>
+          <a href="tel:+27 74 503 2009"
+            class="btn-ghost rounded-full px-8 py-4 font-semibold inline-flex items-center gap-2">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.13.96.36 1.9.7 2.8a2 2 0 01-.45 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0122 16.9z" />
+            </svg>
+            +27 (0) 74 503 2009
+          </a>
+          <a href="https://wa.me/26876957019" target="_blank" rel="noopener noreferrer"
+            class="btn-ghost rounded-full px-8 py-4 font-semibold inline-flex items-center gap-2">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.2 14.2c-.2.6-1.2 1.1-1.7 1.2-.4 0-1 .1-1.6-.1a13 13 0 01-5.9-5.2c-.5-.8-.8-1.7-.8-2.5 0-.8.4-1.5.8-1.9.3-.3.7-.4.9-.4h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.2.3-.1.5.1.3.6 1 1.3 1.7.9.8 1.6 1.1 2 1.2.2.1.4.1.5-.1l.7-.9c.2-.2.4-.3.6-.2l1.9.9c.2.1.4.2.4.4 0 0 .1.4-.1.9z" />
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-20 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
+        <div>
+          <div class="font-display font-bold text-white mb-4">Solutions</div>
+          <ul class="space-y-2.5 text-slate-400">
+            <li><a href="#solutions" class="hover:text-gold-400 transition">Prefab Homes & Smart Homes</a></li>
+            <li><a href="#solutions" class="hover:text-gold-400 transition">Mass Housing Programmes</a></li>
+            <li><a href="#solutions" class="hover:text-gold-400 transition">Schools & Clinics</a></li>
+            <li><a href="#solutions" class="hover:text-gold-400 transition">Mining & Workforce Camps</a></li>
+            <li><a href="#solutions" class="hover:text-gold-400 transition">Modular Pods & Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-display font-bold text-white mb-4">Sectors</div>
+          <ul class="space-y-2.5 text-slate-400">
+            <li><a href="#government" class="hover:text-gold-400 transition">Government & Public Sector</a></li>
+            <li><a href="#solutions" class="hover:text-gold-400 transition">Developers & Landowners</a></li>
+            <li><a href="#solutions" class="hover:text-gold-400 transition">Mining & Energy</a></li>
+            <li><a href="#solutions" class="hover:text-gold-400 transition">Education & Healthcare</a></li>
+            <li><a href="#solutions" class="hover:text-gold-400 transition">Investors & DFIs</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-display font-bold text-white mb-4">Company</div>
+          <ul class="space-y-2.5 text-slate-400">
+            <li><a href="#" class="hover:text-gold-400 transition">About & Leadership</a></li>
+            <li><a href="#" class="hover:text-gold-400 transition">ESG & Local Impact</a></li>
+            <li><a href="#" class="hover:text-gold-400 transition">Technical Library</a></li>
+            <li><a href="#" class="hover:text-gold-400 transition">News & Insights</a></li>
+            <li><a href="#" class="hover:text-gold-400 transition">Careers & Skills</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="font-display font-bold text-white mb-4">Compliance</div>
+          <ul class="space-y-2.5 text-slate-400">
+            <li>POPIA Privacy Notice</li>
+            <li>PAIA Manual</li>
+            <li>Certification Register</li>
+            <li>Secure Government Document Room</li>
+            <li>Supplier / Vendor Onboarding</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-16 pt-8 border-t border-white/5 space-y-6">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <div>© 2026 Africa Smart Prefabricated Housing Solutions. Build Smarter. Build Faster. Build Africa.</div>
+          <div class="flex gap-6">
+            <a href="#" class="hover:text-gold-400 transition">LinkedIn</a>
+            <a href="#" class="hover:text-gold-400 transition">YouTube</a>
+            <a href="#" class="hover:text-gold-400 transition">Privacy</a>
+            <a href="#" class="hover:text-gold-400 transition">Terms</a>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 border-t border-white/5 pt-6">
+          <div>
+            Powered By:
+            <a href="https://indabuko-global.vercel.app" target="_blank"
+              class="text-gold-400 hover:text-gold-300 font-semibold transition">
+              Indabuko Tech Crafts
+            </a>
+          </div>
+          <div class="text-center sm:text-right">
+            Contact:
+            <a href="tel:+27745032009" class="hover:text-gold-400 transition">+27 74 503 2009</a>
+            <span class="mx-1.5 text-slate-600">/</span>
+            <a href="tel:+26876957019" class="hover:text-gold-400 transition">+268 7695 7019</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <a href="#feasibility"
+    class="lg:hidden fixed bottom-4 inset-x-4 z-40 btn-gold rounded-full py-4 font-bold text-center text-sm shadow-2xl">REQUEST
+    FEASIBILITY STUDY</a>
+
+  <!-- ============ SOLUTION DETAIL PANEL ============ -->
+  <div id="solOverlay" class="fixed inset-0 z-[60] bg-navy-950/70 backdrop-blur-sm"></div>
+  <aside id="solPanel"
+    class="fixed inset-y-0 right-0 z-[70] w-full max-w-lg bg-navy-900 border-l border-white/10 shadow-2xl overflow-y-auto">
+    <div
+      class="sticky top-0 z-10 flex items-center justify-between px-6 py-5 bg-navy-900/95 backdrop-blur border-b border-white/10">
+      <div class="text-xs font-semibold tracking-[0.2em] text-azure-400" id="solPanelCat">SOLUTION</div>
+      <button id="solPanelClose"
+        class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-slate-300 hover:border-gold-500 hover:text-gold-400 transition"
+        aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+    </div>
+    <div class="p-6 sm:p-8">
+      <div class="rounded-2xl overflow-hidden mb-6 border border-white/10">
+        <img id="solPanelImg" src="" alt="" class="w-full h-52 object-cover">
+      </div>
+      <h2 id="solPanelTitle" class="font-display text-2xl sm:text-3xl font-extrabold text-white leading-tight mb-3">
+      </h2>
+      <p id="solPanelDesc" class="text-slate-300 leading-relaxed mb-8"></p>
+
+      <div class="mb-8">
+        <h3 class="font-display font-bold text-white text-sm tracking-wider mb-3 text-gold-400">KEY FEATURES</h3>
+        <ul id="solPanelFeatures" class="space-y-2.5 text-sm text-slate-300"></ul>
+      </div>
+      <div class="mb-8">
+        <h3 class="font-display font-bold text-white text-sm tracking-wider mb-3 text-gold-400">TYPICAL APPLICATIONS
+        </h3>
+        <p id="solPanelApps" class="text-sm text-slate-400 leading-relaxed"></p>
+      </div>
+      <div class="mb-10">
+        <h3 class="font-display font-bold text-white text-sm tracking-wider mb-3 text-gold-400">DELIVERY NOTES</h3>
+        <p id="solPanelDelivery" class="text-sm text-slate-400 leading-relaxed"></p>
+      </div>
+
+      <button id="solEnquireBtn"
+        class="btn-gold w-full rounded-full py-4 font-bold text-base flex items-center justify-center gap-2">
+        Enquire about this solution
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M5 12h14M13 6l6 6-6 6" />
+        </svg>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ============ ENQUIRE BOTTOM SHEET ============ -->
+  <div id="enquireOverlay" class="fixed inset-0 z-[80] bg-navy-950/70 backdrop-blur-sm"></div>
+  <div id="enquireSheet"
+    class="fixed inset-x-0 bottom-0 z-[90] max-h-[90vh] overflow-y-auto rounded-t-[1.75rem] bg-navy-900 border-t border-white/10 shadow-2xl">
+    <div class="sticky top-0 bg-navy-900/95 backdrop-blur px-6 pt-4 pb-3 border-b border-white/10">
+      <div class="w-12 h-1.5 rounded-full bg-white/20 mx-auto mb-4"></div>
+      <div class="flex items-center justify-between">
+        <div>
+          <div class="text-xs font-semibold tracking-[0.2em] text-gold-400 mb-1">ENQUIRE</div>
+          <h3 id="enquireTitle" class="font-display font-bold text-white text-lg">Solution enquiry</h3>
+        </div>
+        <button id="enquireClose"
+          class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-slate-300 hover:border-gold-500 hover:text-gold-400 transition"
+          aria-label="Close">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <form id="enquireForm" class="p-6 space-y-4" novalidate>
+      <input type="hidden" id="enquireSolution" value="">
+      <div>
+        <label class="text-xs font-semibold tracking-wider text-slate-400">FULL NAME *</label>
+        <input id="eqName" required type="text" placeholder="Your name"
+          class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500">
+      </div>
+      <div>
+        <label class="text-xs font-semibold tracking-wider text-slate-400">EMAIL *</label>
+        <input id="eqEmail" required type="email" placeholder="you@organisation.co.za"
+          class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500">
+      </div>
+      <div>
+        <label class="text-xs font-semibold tracking-wider text-slate-400">PHONE / WHATSAPP</label>
+        <input id="eqPhone" type="tel" placeholder="+27 …"
+          class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500">
+      </div>
+      <div>
+        <label class="text-xs font-semibold tracking-wider text-slate-400">QUERY NOTES</label>
+        <textarea id="eqNotes" rows="4" placeholder="Tell us about scale, location, timeline or specific requirements…"
+          class="mt-2 w-full bg-navy-800/70 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-slate-500 resize-none"></textarea>
+      </div>
+
+      <!-- States -->
+      <div id="eqIdle">
+        <button type="submit" class="btn-gold w-full rounded-full py-4 font-bold text-sm">Submit enquiry</button>
+      </div>
+      <div id="eqLoading"
+        class="hidden flex items-center justify-center gap-3 py-4 text-gold-400 font-semibold text-sm">
+        <span class="spinner" style="border-color:rgba(201,162,39,.25);border-top-color:#C9A227"></span>
+        Sending…
+      </div>
+      <div id="eqSuccess" class="hidden text-center py-4">
+        <div
+          class="mx-auto w-14 h-14 rounded-full bg-gradient-to-br from-gold-300 to-gold-600 flex items-center justify-center mb-4">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0A1930" stroke-width="3">
+            <path d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <p class="font-display font-bold text-white">Enquiry sent</p>
+        <p class="text-slate-400 text-sm mt-1">We’ll respond within 1 business day.</p>
+        <button type="button" id="eqSuccessClose"
+          class="mt-5 btn-ghost rounded-full px-6 py-2.5 text-sm font-semibold text-white">Close</button>
+      </div>
+      <div id="eqError" class="hidden text-center py-4">
+        <p class="text-red-400 font-semibold text-sm mb-2">Could not send. Please try again or email us directly.</p>
+        <button type="button" id="eqRetry" class="btn-gold rounded-full px-6 py-2.5 text-sm font-bold">Retry</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="/index.js"></script>
+</body>
+
+</html>
